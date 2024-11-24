@@ -1,0 +1,620 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Bootstrap demo</title>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./asset/styles/style.css" />
+    </head>
+    <body>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg bg-dark p-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Waroeng Bakso</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="tentang.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-light fw-bold dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Orders
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a class="dropdown-item text-light fw-bold" href="menu.html"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light fw-bold" href="pembayaran.html"
+                      >Payment</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="kontak.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr />
+
+      <!-- Menu & Toping -->
+      <section id="menu">
+        <div class="menu container-fluid text-center py-5">
+          <h2 class="text-center display-6">Menu & Toping</h2>
+          <div class="row">
+            <div class="row col-md-9 menu mx-auto">
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Raksasa</h6>
+                    <p class="card-price text-success">Rp.40.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Mangkok</h6>
+                    <p class="card-price text-success">Rp.29.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Geranat</h6>
+                    <p class="card-price text-success">Rp.25.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso4.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Keju</h6>
+                    <p class="card-price text-success">Rp.20.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso5.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Urat</h6>
+                    <p class="card-price text-success">Rp.23.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso6.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Telur</h6>
+                    <p class="card-price text-success">Rp.15.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso7.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Biasa</h6>
+                    <p class="card-price text-success">Rp.12.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso8.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Mercon</h6>
+                    <p class="card-price text-success">Rp.17.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso9.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Tanpa Tepung</h6>
+                    <p class="card-price text-success">Rp.50.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="card product-card text-start" style="width: 100%">
+                  <img
+                    src="./asset/product/bakso10.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="row card-body">
+                    <div class="card-description col-8">
+                    <h6 class="card-title">Bakso Borak</h6>
+                    <p class="card-price text-success">Rp.10.000,00-</p>
+                  </div>
+                    <div class="btn-cart col-4 my-auto text-end">
+                    <a href="#" class="btn btn-warning btn-square-md rounded-circle text-center my-2 btn-outline-dark"
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg></a
+                    >
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="toping col-md-3">
+              <div class="card">
+                <div class="card-header bg-warning">Toping</div>
+                <div class="list-group">
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Pangsit Kering
+                      <small class="d-block text-body-secondary"
+                        >Rp 2.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Pangsit Basah
+                      <small class="d-block text-body-secondary"
+                        >Rp 5.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Jamur Kuping
+                      <small class="d-block text-body-secondary"
+                        >Rp 2.500,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Telur Puyuh
+                      <small class="d-block text-body-secondary"
+                        >Rp 3.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Cakwe
+                      <small class="d-block text-body-secondary"
+                        >Rp 3.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Sayuran (Sawi, Kol, atau Kangkung)
+                      <small class="d-block text-body-secondary"
+                        >Rp 4.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Kikil
+                      <small class="d-block text-body-secondary"
+                        >Rp 5.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Sosis
+                      <small class="d-block text-body-secondary"
+                        >Rp 7.000,00/porsi</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Udang Goreng
+                      <small class="d-block text-body-secondary"
+                        >Rp 5.000,00/pcs</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Kerupuk Emping
+                      <small class="d-block text-body-secondary"
+                        >Rp 2.000,00/5pcs</small
+                      >
+                    </span>
+                  </label>
+                  <label class="list-group-item d-flex gap-2 text-start">
+                    <input
+                      class="form-check-input flex-shrink-0"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span>
+                      Siomay
+                      <small class="d-block text-body-secondary"
+                        >Rp 5.000,00/pcs</small
+                      >
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Addres -->
+      <section id="formulir-pemesanan" class="bg-light">
+        <div class="container my-5">
+            <h2 class="text-center display-6 p-4">Formulir Pendaftaran</h2>
+            <form id="orderForm">
+                <!-- Name Input -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+    
+                <!-- Phone Number Input -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Nomor Telepon</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+    
+                <!-- Region (Pulau Jawa) Selection -->
+                <div class="mb-3">
+                    <label for="region" class="form-label">Provinsi</label>
+                    <select class="form-select" id="region" required>
+                        <option value="" selected>Pilih Provinsi</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Banten">Banten</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="Yogyakarta">Yogyakarta</option>   
+                        <option value="Jawa Timur">Jawa Timur</option>   
+                    </select>
+                </div>
+    
+                <!-- City Selection -->
+                <div class="mb-3">
+                    <label for="city" class="form-label">Kota</label>
+                    <select class="form-select" id="city" required>
+                        <option value="" selected>Pilih Kota</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Semarang">Semarang</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Malang">Malang</option>
+                        <option value="Bekasi">Bekasi</option>
+                        <option value="Tangerang">Tangerang</option>
+                        <option value="Bogor">Bogor</option>
+                        <option value="Cirebon">Cirebon</option>
+                        <option value="Solo">Solo</option>
+                        <option value="Magelang">Magelang</option>
+                        <option value="Banyuwangi">Banyuwangi</option>
+                        <option value="Probolinggo">Probolinggo</option>
+                        <option value="Ciamis">Ciamis</option>
+                        <option value="Pangandaran">Pangandaran</option>
+                    </select>
+                </div>
+    
+                <!-- Address Input -->
+                <div class="mb-3">
+                    <label for="address" class="form-label">Alamat Pengantaran</label>
+                    <textarea class="form-control" id="address" rows="3" placeholder="Enter your full address" required></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <button type="button" class="btn btn-warning py-2 px-5 mt-2 d-grid gap-2 rounded-3" onclick="submitOrder()">Lanjut ke Pembayaran</button>
+            </form>
+        </div>
+    </section>
+
+      <!-- Footer -->
+      <div class="container-fluid bg-dark">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-white">&copy; 2024 Waroeng Bakso</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg></a></li>
+            <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a></li>
+            <li class="ms-3"><a class="text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./asset/scripts/order.js"></script>
+    <script>
+      // Select all cart buttons
+      document.querySelectorAll('.btn-cart a').forEach(cartButton => {
+        cartButton.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent page reload
+          
+          // Find the item details (name and price)
+          const productCard = cartButton.closest('.product-card');
+          const itemName = productCard.querySelector('.card-title').textContent;
+          const itemPrice = productCard.querySelector('.card-price').textContent;
+    
+          // Retrieve existing cart data from localStorage or create a new array
+          let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+          
+          // Add new item to the cart array
+          cartItems.push({ name: itemName, price: itemPrice });
+          
+          // Store updated cart data back in localStorage
+          localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    
+          alert(`${itemName} berhasil ditambahkan ke keranjang!`);
+        });
+      });
+
+      function submitOrder() {
+  // Ambil nilai dari setiap input form
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const region = document.getElementById("region").value;
+  const city = document.getElementById("city").value;
+  const address = document.getElementById("address").value.trim();
+
+  // Periksa apakah semua field terisi
+  if (!name || !phone || !region || !city || !address) {
+    // Jika ada yang kosong, tampilkan pesan peringatan
+    alert("Harap isi semua data dan keranjang sebelum melanjutkan ke pembayaran.");
+    return; // Hentikan fungsi jika validasi gagal
+  }
+
+  // Simpan data ke localStorage jika semua field sudah terisi
+  localStorage.setItem("name", name);
+  localStorage.setItem("phone", phone);
+  localStorage.setItem("region", region);
+  localStorage.setItem("city", city);
+  localStorage.setItem("address", address);
+
+  // Pindah ke halaman pembayaran
+  window.location.href = "pembayaran.html";
+}
+
+// Hubungkan fungsi `submitOrder` ke tombol "Lanjut ke Pembayaran"
+document.querySelector("button[onclick='submitOrder()']").addEventListener("click", submitOrder);
+
+    </script>    
+  </html>

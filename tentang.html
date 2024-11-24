@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./asset/styles/style.css" />
+    <style>
+      .card:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease;
+      }
+      .card-header {
+          background-color: #ffc107;
+          color: white;
+      }
+      .btn-map {
+          background-color: #ff8800;
+          border-color: #ff8800;
+          color: white;
+      }
+      .btn-map:hover {
+          background-color: #ff7700;
+          color: white;
+      }
+      .bg-hero {
+          background: url('https://source.unsplash.com/1600x400/?bakso,food') center/cover no-repeat;
+          color: white;
+          text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+      }
+  </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-dark p-3 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Waroeng Bakso</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="tentang.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-light fw-bold dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Orders
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li>
+                  <a class="dropdown-item text-light fw-bold" href="menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light fw-bold"
+                    href="pembayaran.html"
+                    >Payment</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="kontak.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr />
+
+    <!-- Descrption -->
+    <section id="descrption">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-100"
+                    src="./asset/product/bakso1.jpg"
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-75"
+                    src="./asset/product/bakso2.jpg"
+                    style="margin-top: 25%"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-75"
+                    src="./asset/product/bakso3.jpg"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.7s"
+                    src="./asset/product/bakso4.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h5 class="section-title text-start text-warning fw-normal">
+                Tentang Kami
+              </h5>
+              <h1 class="mb-4 fs-2 text fw-bolder">
+                Selamat Datang di Waroeng Bakso
+              </h1>
+              <p class="mb-4">
+                Warung Bakso Kami menawarkan berbagai varian bakso dengan cita
+                rasa unik. Selain bakso daging sapi klasik, ada juga bakso isi
+                keju, bakso pedas, bakso seafood, dan bakso ayam kampung.
+              </p>
+              <p class="mb-4">
+                Setiap varian menggunakan bahan berkualitas dan bumbu yang pas,
+                cocok untuk segala selera. Dengan pelengkap seperti mie, tahu,
+                dan kerupuk, makan bakso di sini selalu memuaskan.
+              </p>
+              <div class="row g-4 mb-4">
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-warning px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-warning mb-0"
+                      data-toggle="counter-up"
+                    >
+                      3
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">Tahun</p>
+                      <h6 class="text-uppercase mb-0">Pengalaman</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-warning px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-warning mb-0"
+                      data-toggle="counter-up"
+                    >
+                      10
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">Varian</p>
+                      <h6 class="text-uppercase mb-0">Menu Bakso</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+     <section id="history" class="bg-light">
+      <div class="container my-5 ">
+      <h2 class="text-center display-6 p-5">Sejarah Kami</h2>
+      <div class="timeline">
+          <div class="timeline-item">
+              <div class="timeline-icon">1</div>
+              <div class="timeline-item-content right">
+                  <h4>Tahun 1</h4>
+                  <p>Pada tahun pertama, kami memulai perjalanan ini dengan visi untuk menyajikan hidangan yang berkualitas.</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-icon">2</div>
+              <div class="timeline-item-content left">
+                  <h4>Tahun 2</h4>
+                  <p> Setelah sukses di tahun pertama, warung bakso memutuskan untuk membuka cabang kedua di kota terdekat. Memanfaatkan media sosial, warung ini mulai menarik lebih banyak pelanggan dan memperkenalkan variasi menu, seperti bakso mercon dan bakso urat.</p>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-icon">3</div>
+              <div class="timeline-item-content right">
+                  <h4>Tahun 3</h4>
+                  <p> Di tahun ketiga, warung bakso berkembang pesat dengan membuka beberapa cabang baru yang tersebar di beberapa kota besar di Pulau Jawa. Dengan adanya layanan pemesanan online dan pengantaran, warung bakso ini semakin mudah diakses, dan berhasil mempertahankan kualitas rasa yang autentik dan lezat.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Cabang -->
+<section id="locations" class="py-5 bg-light">
+  <div class="container">
+      <h2 class="text-center mb-4">Cabang Kami di Seluruh Pulau Jawa</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <!-- Cabang Jakarta -->
+          <div class="col">
+              <div class="card h-100 shadow">
+                  <div class="card-header text-center">
+                      <h5 class="card-title m-0">Warung Bakso Jakarta</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Alamat:</strong> Jl. Sudirman No. 123, Jakarta Pusat</p>
+                      <p class="card-text"><strong>Jam Buka:</strong> 09.00 - 22.00</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Sudirman+No.+123,+Jakarta+Pusat" class="btn btn-map" target="_blank">Lihat di Peta</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Cabang Bandung -->
+          <div class="col">
+              <div class="card h-100 shadow">
+                  <div class="card-header text-center">
+                      <h5 class="card-title m-0">Warung Bakso Bandung</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Alamat:</strong> Jl. Asia Afrika No. 45, Bandung</p>
+                      <p class="card-text"><strong>Jam Buka:</strong> 10.00 - 21.00</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Asia+Afrika+No.+45,+Bandung" class="btn btn-map" target="_blank">Lihat di Peta</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Cabang Surabaya -->
+          <div class="col">
+              <div class="card h-100 shadow">
+                  <div class="card-header text-center">
+                      <h5 class="card-title m-0">Warung Bakso Surabaya</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Alamat:</strong> Jl. Pemuda No. 78, Surabaya</p>
+                      <p class="card-text"><strong>Jam Buka:</strong> 10.00 - 22.00</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Pemuda+No.+78,+Surabaya" class="btn btn-map" target="_blank">Lihat di Peta</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Cabang Semarang -->
+          <div class="col">
+              <div class="card h-100 shadow">
+                  <div class="card-header text-center">
+                      <h5 class="card-title m-0">Warung Bakso Semarang</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Alamat:</strong> Jl. Pandanaran No. 67, Semarang</p>
+                      <p class="card-text"><strong>Jam Buka:</strong> 09.00 - 21.00</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Pandanaran+No.+67,+Semarang" class="btn btn-map" target="_blank">Lihat di Peta</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Cabang Yogyakarta -->
+          <div class="col">
+              <div class="card h-100 shadow">
+                  <div class="card-header text-center">
+                      <h5 class="card-title m-0">Warung Bakso Yogyakarta</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Alamat:</strong> Jl. Malioboro No. 99, Yogyakarta</p>
+                      <p class="card-text"><strong>Jam Buka:</strong> 08.00 - 20.00</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Malioboro+No.+99,+Yogyakarta" class="btn btn-map" target="_blank">Lihat di Peta</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Cabang Malang -->
+          <div class="col">
+              <div class="card h-100 shadow">
+                  <div class="card-header text-center">
+                      <h5 class="card-title m-0">Warung Bakso Malang</h5>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Alamat:</strong> Jl. Ijen No. 33, Malang</p>
+                      <p class="card-text"><strong>Jam Buka:</strong> 10.00 - 21.00</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Ijen+No.+33,+Malang" class="btn btn-map" target="_blank">Lihat di Peta</a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+    <!-- Testimoni -->
+    <section id="testimoni">
+      <div class="container my-5 bg-">
+        <h1 class="text-center display-6 my-5">Testimoni</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.pexels.com/photos/3525908/pexels-photo-3525908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="img-fluid rounded-circle px-3 py-3"
+                    alt="John Doe"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Pelayanan di Warung Bakso Paresmanan sangat memuaskan!
+                      Baksonya selalu segar dan lezat."
+                    </p>
+                    <h5 class="card-title">John Doe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Penggemar Bakso
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="img-fluid rounded-circle px-3 py-3"
+                    alt="Jane Smith"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Pengalaman makan di sini luar biasa! Suasana warungnya
+                      bikin betah dan baksonya juara!"
+                    </p>
+                    <h5 class="card-title">Jane Smith</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Pecinta Kuliner
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="img-fluid rounded-circle px-3 py-3"
+                    alt="Alice Johnson"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">
+                      "Warung Bakso Paresmanan adalah tempat favorit saya! Rasa
+                      baksonya tidak ada duanya!"
+                    </p>
+                    <h5 class="card-title">James Noele</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Food Vloger</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section id="form-comment" class="bg-light p-2">
+        <div class=" container gap-2 rounded-3 mx-auto border m-4 p-4 bg-dark text-white">
+          <div class="text-center m-1">
+            <h2 class="heading-section">Berikan Warung Kami Komentar</h2>
+          </div>
+          <hr>
+          <div class="col-12">
+            <label for="nama" class="form-label">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nama"
+              placeholder="Masukan Nama Anda"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          <div class="col-12">
+            <label for="komentar" class="form-label">Komentar</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="komentar"
+              placeholder="Berikan Komentar Anda"
+              cols="30"
+              rows="6"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              Please enter your shipping Komentar.
+            </div>
+          </div>
+          </div>
+          <div class="col-12">
+            <label for="sebagai" class="form-label">Sebagai</label>
+            <input
+              type="text"
+              class="form-control"
+              id="sebagai"
+              placeholder="Contoh Food Vloger"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group py-2">
+              <input
+                type="submit"
+                value="Tambahkan Komentar"
+                class="btn btn-warning"
+              />
+              <div class="submitting"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-white">&copy; 2024 Waroeng Bakso</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-light" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                /></svg> </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-light" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                /></svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-light" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                /></svg></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const submitButton = document.querySelector('input[type="submit"]');
+        submitButton.addEventListener("click", (e) => {
+          e.preventDefault(); // Prevent page reload
+    
+          // Get input values
+          const nama = document.getElementById("nama").value;
+          const komentar = document.getElementById("komentar").value;
+          const sebagai = document.getElementById("sebagai").value;
+    
+          // Check if all fields are filled
+          if (nama && komentar && sebagai) {
+            // Generate initials
+            const initials = nama
+              .split(" ")
+              .map(word => word[0])
+              .join("")
+              .toUpperCase();
+    
+            // Create a new comment card
+            const card = document.createElement("div");
+            card.className = "col-md-4";
+            card.innerHTML = `
+              <div class="card mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center bg-secondary rounded-circle text-white m-3" style="width: 85px; height: 85px;">
+                    <span class="initials fs-3">${initials}</span>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-text">"${komentar}"</p>
+                      <h5 class="card-title">${nama}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">${sebagai}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+    
+            // Append the new card to the Testimoni section
+            const testimoniSection = document.querySelector("#testimoni .row");
+            testimoniSection.appendChild(card);
+    
+            // Clear input fields
+            document.getElementById("nama").value = "";
+            document.getElementById("komentar").value = "";
+            document.getElementById("sebagai").value = "";
+          } else {
+            alert("Form belum Terisi.");
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>
